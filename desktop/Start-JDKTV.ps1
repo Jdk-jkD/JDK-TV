@@ -26,9 +26,9 @@ if ($status -and ($status.version -ne $expectedVersion -or -not $status.verified
 }
 
 if (-not $status) {
-    foreach ($port in $Port, $backendPort) {
-        if (Get-NetTCPConnection -LocalPort $port -State Listen -ErrorAction SilentlyContinue) {
-            throw "Port $port is already in use. Stop that service before starting JDKTV."
+    foreach ($checkPort in $Port, $backendPort) {
+        if (Get-NetTCPConnection -LocalPort $checkPort -State Listen -ErrorAction SilentlyContinue) {
+            throw "Port $checkPort is already in use. Stop that service before starting JDKTV."
         }
     }
 
