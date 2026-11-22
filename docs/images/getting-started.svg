@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img">
+<style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif}</style>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto-start-reverse"><path d="M0 0L8 4L0 8Z" fill="#51d1dc"/></marker></defs>
+<rect width="1200" height="500" rx="22" fill="#0b1220"/>
+<text x="36" y="53" font-size="30" fill="#e7eef7" font-weight="700">从添加片源，到开始观看</text>
+<text x="36" y="88" font-size="18" fill="#a3b5cd" font-weight="400">点播、直播与追更的基本操作</text>
+<rect x="32" y="126" width="256" height="208" rx="16" fill="#142033" stroke="#2c3d54"/>
+<text x="52" y="166" font-size="24" fill="#59d5e1" font-weight="700">01</text>
+<text x="52" y="205" font-size="24" fill="#e7eef7" font-weight="700">添加来源</text>
+<text x="52" y="243" font-size="17" fill="#b9c7da" font-weight="400">点击右上角“设置”</text>
+<text x="52" y="272" font-size="17" fill="#b9c7da" font-weight="400">源管理 → 点播源</text>
+<text x="52" y="301" font-size="17" fill="#b9c7da" font-weight="400">选择“添加 API”</text>
+<path d="M296 224 H311" stroke="#51d1dc" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="320" y="126" width="256" height="208" rx="16" fill="#142033" stroke="#2c3d54"/>
+<text x="340" y="166" font-size="24" fill="#59d5e1" font-weight="700">02</text>
+<text x="340" y="205" font-size="24" fill="#e7eef7" font-weight="700">搜索影片</text>
+<text x="340" y="243" font-size="17" fill="#b9c7da" font-weight="400">输入想看的片名</text>
+<text x="340" y="272" font-size="17" fill="#b9c7da" font-weight="400">搜索已启用的数据源</text>
+<text x="340" y="301" font-size="17" fill="#b9c7da" font-weight="400">比较可用的播放线路</text>
+<path d="M584 224 H599" stroke="#51d1dc" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="608" y="126" width="256" height="208" rx="16" fill="#142033" stroke="#2c3d54"/>
+<text x="628" y="166" font-size="24" fill="#59d5e1" font-weight="700">03</text>
+<text x="628" y="205" font-size="24" fill="#e7eef7" font-weight="700">选择并播放</text>
+<text x="628" y="243" font-size="17" fill="#b9c7da" font-weight="400">电影进入播放页</text>
+<text x="628" y="272" font-size="17" fill="#b9c7da" font-weight="400">多集内容选择集数</text>
+<text x="628" y="301" font-size="17" fill="#b9c7da" font-weight="400">调整画面、倍速与跳过</text>
+<path d="M872 224 H887" stroke="#51d1dc" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="896" y="126" width="256" height="208" rx="16" fill="#142033" stroke="#2c3d54"/>
+<text x="916" y="166" font-size="24" fill="#59d5e1" font-weight="700">04</text>
+<text x="916" y="205" font-size="24" fill="#e7eef7" font-weight="700">加入我的片单</text>
+<text x="916" y="243" font-size="17" fill="#b9c7da" font-weight="400">电影加入“想看”</text>
+<text x="916" y="272" font-size="17" fill="#b9c7da" font-weight="400">剧集加入“追更”</text>
+<text x="916" y="301" font-size="17" fill="#b9c7da" font-weight="400">继续观看 / 检查新集</text>
+<rect x="32" y="360" width="1120" height="104" rx="16" fill="#102b39" stroke="#245768"/>
+<text x="52" y="400" font-size="19" fill="#e7eef7" font-weight="400">直播：设置 → 源管理 → 直播源 → 添加 M3U → 在“直播”页选频道</text>
+<text x="52" y="438" font-size="19" fill="#e7eef7" font-weight="400">订阅：设置 → 源管理 → 数据源订阅 → 填入地址 → 同步来源</text>
+</svg>

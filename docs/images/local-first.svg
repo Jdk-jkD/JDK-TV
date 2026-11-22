@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img">
+<style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif}</style>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto-start-reverse"><path d="M0 0L8 4L0 8Z" fill="#51d1dc"/></marker></defs>
+<rect width="1200" height="500" rx="22" fill="#0b1220"/>
+<text x="36" y="53" font-size="30" fill="#e7eef7" font-weight="700">本地运行，来源自由组合</text>
+<text x="36" y="88" font-size="18" fill="#a3b5cd" font-weight="400">应用与观看记录留在设备上，在线视频从配置的来源按需加载</text>
+<rect x="32" y="122" width="752" height="294" rx="16" fill="#142033" stroke="#2c3d54"/>
+<text x="58" y="157" font-size="21" fill="#66d7e1" font-weight="700">你的设备</text>
+<text x="572" y="157" font-size="17" fill="#a3b5cd" font-weight="400">无需中心账号</text>
+<rect x="60" y="177" width="694" height="76" rx="16" fill="#103b4b" stroke="#237183"/>
+<text x="82" y="209" font-size="24" fill="#69dce5" font-weight="700">JDK TV</text>
+<text x="82" y="237" font-size="18" fill="#e7eef7" font-weight="400">本地服务 + 浏览器播放器 · Windows 绿色版</text>
+<text x="60" y="281" font-size="18" fill="#a3b5cd" font-weight="400">记录与缓存写入本机</text>
+<rect x="60" y="300" width="220" height="86" rx="16" fill="#1b293e" stroke="#2c3d54"/>
+<text x="76" y="334" font-size="20" fill="#e7eef7" font-weight="600">片单与观看历史</text>
+<text x="76" y="362" font-size="16" fill="#a3b5cd" font-weight="400">想看 · 追更 · 续播</text>
+<rect x="297" y="300" width="220" height="86" rx="16" fill="#1b293e" stroke="#2c3d54"/>
+<text x="313" y="334" font-size="20" fill="#e7eef7" font-weight="600">播放进度与配置</text>
+<text x="313" y="362" font-size="16" fill="#a3b5cd" font-weight="400">来源 · 偏好 · 标记</text>
+<rect x="534" y="300" width="220" height="86" rx="16" fill="#1b293e" stroke="#2c3d54"/>
+<text x="550" y="334" font-size="20" fill="#e7eef7" font-weight="600">视频分片缓存</text>
+<text x="550" y="362" font-size="16" fill="#a3b5cd" font-weight="400">容量设置 · 手动清理</text>
+<rect x="862" y="177" width="306" height="206" rx="16" fill="#142033" stroke="#2c3d54"/>
+<text x="882" y="211" font-size="22" fill="#69dce5" font-weight="700">所选数据源</text>
+<text x="882" y="250" font-size="18" fill="#e7eef7" font-weight="400">点播接口 / 播放线路</text>
+<text x="882" y="287" font-size="18" fill="#e7eef7" font-weight="400">M3U 直播 / XMLTV</text>
+<text x="882" y="324" font-size="18" fill="#e7eef7" font-weight="400">推荐 / 封面等内容接口</text>
+<path d="M785 215 H848" fill="none" stroke="#51d1dc" stroke-width="2.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="798" y="191" font-size="16" fill="#a3b5cd" font-weight="400">联网</text>
+<text x="36" y="460" font-size="18" fill="#a3b5cd" font-weight="400">在线搜索与播放需要联网；本机记录不依赖账号云同步。</text>
+</svg>
