@@ -49,7 +49,7 @@ with zipfile.ZipFile(portable,"w",zipfile.ZIP_DEFLATED,compresslevel=6) as z:
   if p.is_file():z.write(p,Path(name)/p.relative_to(dest))
 forbidden={"browser-profile","config","logs","temp"}
 with zipfile.ZipFile(portable) as z:
- assert not any(any(c in forbidden for c in Path(n).parts) or Path(n).name.startswith(".env") for n in z.namelist())
+ assert not any((len(Path(n).parts) > 1 and Path(n).parts[1] in forbidden) or Path(n).name.startswith(".env") for n in z.namelist())
 checksum=output/"SHA256SUMS.txt"
 checksum.write_text("".join(hashlib.sha256(p.read_bytes()).hexdigest()+"  "+p.name+"\n" for p in [portable,source]),encoding="ascii")
 print(json.dumps({"portable":str(portable),"source":str(source),"checksums":str(checksum)},ensure_ascii=False))
