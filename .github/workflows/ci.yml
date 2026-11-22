@@ -48,3 +48,6 @@ jobs:
 
       - name: Unit tests
         run: npm test
+
+      - name: Portable package privacy regression
+        run: python3 scripts/test-package-privacy.py

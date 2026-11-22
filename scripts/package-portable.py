@@ -1,5 +1,25 @@
 import argparse,hashlib,json,shutil,zipfile
 from pathlib import Path
+from urllib.parse import quote
+
+def remove_build_paths(app_root, build_root):
+ """Remove build-machine directory prefixes from generated text metadata."""
+ variants={str(build_root.resolve()), build_root.resolve().as_posix()}
+ for _ in range(4):
+  variants.update(v.replace("\\", "\\\\") for v in tuple(variants))
+ variants.update(quote(v,safe="") for v in tuple(variants))
+ prefixes=sorted((v.encode("utf8") for v in variants), key=len, reverse=True)
+ changed=0
+ for p in app_root.rglob("*"):
+  if not p.is_file() or p.suffix.lower() not in {".js",".cjs",".mjs",".json",".map",".html",".txt"}:
+   continue
+  original=p.read_bytes();clean=original
+  for prefix in prefixes:
+   clean=clean.replace(prefix,b".")
+  if clean!=original:
+   p.write_bytes(clean);changed+=1
+ return changed
+
 ap=argparse.ArgumentParser(description="Build JDK TV portable ZIP from a verified standalone build")
 ap.add_argument("--node-dir",type=Path,required=True)
 ap.add_argument("--output",type=Path,required=True)
@@ -19,6 +39,7 @@ assert not dest.exists(),"Output folder already exists"
 shutil.copytree(app,dest/"app",ignore=shutil.ignore_patterns(".env",".env.*","*.log"))
 shutil.copytree(build/".next/static",dest/"app/.next/static")
 shutil.copytree(root/"public",dest/"app/public",dirs_exist_ok=True)
+print("Removed build-machine paths from",remove_build_paths(dest/"app",build),"generated files")
 shutil.copytree(root/"desktop",dest,dirs_exist_ok=True)
 (dest/"runtime").mkdir()
 shutil.copy2(args.node_dir/"node.exe",dest/"runtime/node.exe")
