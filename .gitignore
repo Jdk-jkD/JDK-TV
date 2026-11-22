@@ -1,0 +1,15 @@
+node_modules/
+.next/
+out/
+dist/
+releases/
+browser-profile/
+config/
+logs/
+temp/
+runtime/
+.env
+.env.*
+!.env.example
+*.tsbuildinfo
+*.log
